@@ -2,7 +2,7 @@
 
 namespace VCComponent\Laravel\Redirecter\Exceptions;
 
-use Exception;
+use Throwable;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Support\Facades\Redirect;
 use VCComponent\Laravel\Redirecter\Entities\RedirectUrls;
@@ -34,7 +34,7 @@ class VccHandler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return void
      */
-    public function report(Exception $exception)
+    public function report(Throwable $exception)
     {
         parent::report($exception);
     }
@@ -46,7 +46,7 @@ class VccHandler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $exception)
+    public function render($request, Throwable $exception)
     {
         $url     = $request->fullUrl();
         $badurls = RedirectUrls::get();
