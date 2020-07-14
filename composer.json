@@ -1,6 +1,6 @@
 {
-    "name": "vicoders/redirecter",
-    "description": "Boilerplate template for laravel package",
+    "name": "webpress/redirecter",
+    "description": "Webpress redirecter pacakges",
     "authors": [
         {
             "name": "sonhaichu",
