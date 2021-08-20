@@ -1,12 +1,12 @@
 <?php
 
-namespace VCComponent\Laravel\Redirecter\Providers;
+namespace VCComponent\Laravel\Redirector\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use VCComponent\Laravel\Redirecter\Repositories\RedirectRepository;
-use VCComponent\Laravel\Redirecter\Repositories\RedirectRepositoryEloquent;
+use VCComponent\Laravel\Redirector\Repositories\RedirectRepository;
+use VCComponent\Laravel\Redirector\Repositories\RedirectRepositoryEloquent;
 
-class RedirecterServiceProvider extends ServiceProvider
+class RedirectorServiceProvider extends ServiceProvider
 {
 
     public function boot()

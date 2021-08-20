@@ -1,11 +1,11 @@
 <?php
 
-namespace VCComponent\Laravel\Redirecter\Http\Controllers\Api\Admin;
+namespace VCComponent\Laravel\Redirector\Http\Controllers\Api\Admin;
 
 use Illuminate\Http\Request;
-use VCComponent\Laravel\Redirecter\Repositories\RedirectRepository;
-use VCComponent\Laravel\Redirecter\Transformers\RedirectTransformer;
-use VCComponent\Laravel\Redirecter\Validators\RedirectValidator;
+use VCComponent\Laravel\Redirector\Repositories\RedirectRepository;
+use VCComponent\Laravel\Redirector\Transformers\RedirectTransformer;
+use VCComponent\Laravel\Redirector\Validators\RedirectValidator;
 use VCComponent\Laravel\Vicoders\Core\Controllers\ApiController;
 use VCComponent\Laravel\Vicoders\Core\Exceptions\NotFoundException;
 

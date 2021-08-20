@@ -1,6 +1,6 @@
 <?php
 
-namespace VCComponent\Laravel\Redirecter\Validators;
+namespace VCComponent\Laravel\Redirector\Validators;
 
 use VCComponent\Laravel\Vicoders\Core\Validators\AbstractValidator;
 use VCComponent\Laravel\Vicoders\Core\Validators\ValidatorInterface;

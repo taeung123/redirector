@@ -1,6 +1,6 @@
 <?php
 
-namespace VCComponent\Laravel\Redirecter\Entities;
+namespace VCComponent\Laravel\Redirector\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 

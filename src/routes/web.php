@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
-use VCComponent\Laravel\Redirecter\Entities\RedirectUrls;
+use VCComponent\Laravel\Redirector\Entities\RedirectUrls;
 
 // $badurls = RedirectUrls::get();
 // foreach ($badurls as $badurl) {

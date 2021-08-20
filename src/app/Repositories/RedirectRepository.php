@@ -1,6 +1,6 @@
 <?php
 
-namespace VCComponent\Laravel\Redirecter\Repositories;
+namespace VCComponent\Laravel\Redirector\Repositories;
 
 use Prettus\Repository\Contracts\RepositoryInterface;
 

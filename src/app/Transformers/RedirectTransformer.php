@@ -1,6 +1,6 @@
 <?php
 
-namespace VCComponent\Laravel\Redirecter\Transformers;
+namespace VCComponent\Laravel\Redirector\Transformers;
 
 use League\Fractal\TransformerAbstract;
 

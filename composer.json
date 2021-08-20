@@ -1,6 +1,6 @@
 {
-    "name": "webpress/redirecter",
-    "description": "Webpress redirecter pacakges",
+    "name": "webpress/redirector",
+    "description": "Webpress redirector pacakges",
     "authors": [
         {
             "name": "sonhaichu",
@@ -10,12 +10,12 @@
     "autoload": {
         "classmap": ["src/app/"],
         "psr-4": {
-            "VCComponent\\Laravel\\Redirecter\\": "src/app/"
+            "VCComponent\\Laravel\\Redirector\\": "src/app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VCComponent\\Laravel\\Redirecter\\Test\\": "tests/"
+            "VCComponent\\Laravel\\Redirector\\Test\\": "tests/"
         }
     },
     "require": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VCComponent\\Laravel\\Redirecter\\Providers\\RedirecterServiceProvider"
+                "VCComponent\\Laravel\\Redirector\\Providers\\RedirectorServiceProvider"
             ]
         }
     },

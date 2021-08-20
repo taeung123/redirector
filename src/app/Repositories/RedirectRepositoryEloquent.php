@@ -1,11 +1,11 @@
 <?php
 
-namespace VCComponent\Laravel\Redirecter\Repositories;
+namespace VCComponent\Laravel\Redirector\Repositories;
 
 use Prettus\Repository\Criteria\RequestCriteria;
 use Prettus\Repository\Eloquent\BaseRepository;
-use VCComponent\Laravel\Redirecter\Entities\RedirectUrls;
-use VCComponent\Laravel\Redirecter\Repositories\RedirectRepository;
+use VCComponent\Laravel\Redirector\Entities\RedirectUrls;
+use VCComponent\Laravel\Redirector\Repositories\RedirectRepository;
 use VCComponent\Laravel\Vicoders\Core\Exceptions\NotFoundException;
 
 /**

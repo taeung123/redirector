@@ -1,11 +1,11 @@
 <?php
 
-namespace VCComponent\Laravel\Redirecter\Exceptions;
+namespace VCComponent\Laravel\Redirector\Exceptions;
 
 use Throwable;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Support\Facades\Redirect;
-use VCComponent\Laravel\Redirecter\Entities\RedirectUrls;
+use VCComponent\Laravel\Redirector\Entities\RedirectUrls;
 
 class VccHandler extends ExceptionHandler
 {
