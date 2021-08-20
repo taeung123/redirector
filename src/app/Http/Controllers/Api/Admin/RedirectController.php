@@ -25,7 +25,7 @@ class RedirectController extends ApiController
         $query = $this->entity;
 
         $query    = $this->applyConstraintsFromRequest($query, $request);
-        $query    = $this->applySearchFromRequest($query, ['name'], $request);
+        $query    = $this->applySearchFromRequest($query, ['from_url', 'to_url'], $request);
         $query    = $this->applyOrderByFromRequest($query, $request);
         $per_page = $request->has('per_page') ? (int) $request->get('per_page') : 15;
         $tags     = $query->paginate($per_page);
@@ -56,7 +56,7 @@ class RedirectController extends ApiController
         $query = $this->entity;
 
         $query = $this->applyConstraintsFromRequest($query, $request);
-        $query = $this->applySearchFromRequest($query, ['name'], $request);
+        $query = $this->applySearchFromRequest($query, ['from_url', 'to_url'], $request);
         $query = $this->applyOrderByFromRequest($query, $request);
 
         $tags = $query->get();
