@@ -19,6 +19,15 @@ class RedirectController extends ApiController
         $this->entity      = $repository->getEntity();
         $this->validator   = $validator;
         $this->transformer = RedirectTransformer::class;
+        if (config('redirect.auth_middleware.admin.middleware') !== '') {
+            $this->middleware(
+                config('redirect.auth_middleware.admin.middleware'),
+                ['except' => config('redirect.auth_middleware.admin.except')]
+            );
+        }
+        else{
+            throw new Exception("Admin middleware configuration is required");
+        }
     }
     public function index(Request $request)
     {

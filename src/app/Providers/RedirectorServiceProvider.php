@@ -16,8 +16,9 @@ class RedirectorServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
         $this->publishes([
             __DIR__ . '/../../app/Exceptions/Handler.php' => base_path('/app/Exceptions/Handler.php'),
+            __DIR__ . '/../../config/redirect.php' => config_path('redirect.php'),
 
-        ], 'ridereccter');
+        ], 'redirector');
     }
 
     public function register()
